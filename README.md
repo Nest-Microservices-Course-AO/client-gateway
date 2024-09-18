@@ -17,3 +17,13 @@ docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
 
 5. Tener levantados los microservicios que se van a consumir
 6. Levantar proyecto con `npm run start:dev`
+
+## Nats
+
+```
+docker run -d --name nats-server -p 4222:4222 -p 8222:8222 nats
+```
+
+## Prod
+
+Ejecutar comando `docker build -f dockerfile.prod -t client-gateway .` para crear la imagen de producción.
